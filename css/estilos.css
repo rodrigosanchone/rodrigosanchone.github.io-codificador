@@ -1,0 +1,177 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo{
+   
+   margin-top: 50px;
+   
+  }
+
+
+
+
+
+.principal h2 {
+   
+    width: 343px;
+    height: 48px;
+    left: 16px;
+    top: 152px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    margin-left: 50px;
+}
+
+.text{
+    width: 90%;
+}
+
+.text textarea{
+    outline: 0;
+    border: solid gray 2px;
+    height:600px;
+    width: 100%;
+    margin: 0 7%;
+}
+
+.acciones{
+    width: 90%;
+    margin-left: 5px;
+}
+
+.btn1{
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+   color: #fff;
+    width: 343px;
+    height: 67px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: #0A3871;
+    border-radius: 24px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.btn2{
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 343px;
+    height: 67px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    color: #0A3871;
+    border-radius: 24px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.imagen{
+    display: none;
+}
+
+.mensaje-encriptado h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.mensaje-encriptado p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  text-align: center;
+  color: #495057;
+}
+
+
+@media screen and (min-width: 768px){
+  
+ .acciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 0;
+ }
+
+ .btn1{
+    margin-left: 80px;
+ }
+
+ .btn2  {
+    margin:0px 5px
+ }
+}
+
+
+@media screen and (min-width: 800px) {
+  .principal {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .principal h2 {
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin: 0;
+  }
+  
+  .imagen{
+    display: block;
+}
+
+
+
+ .text textarea{
+    outline: 0;
+    border: solid gray 2px;
+    height:400px
+}
+
+  
+}
