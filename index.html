@@ -18,7 +18,7 @@
     <div class="principal">
         <div class="text">
            
-            <textarea name="" id="texto" placeholder="Ingrese su texto aquí"></textarea>
+            <textarea name="" id="texto" placeholder="Ingrese su texto aquí"  onkeypress="return ((event.charCode >= 97 && event.charCode <= 122)||(event.charCode==32)) "></textarea>
             <div class="acciones">
                 <button class="btn1" onclick="btnEncriptar()">Encriptar</button>
                 <button class="btn2" onclick="btnDesencriptar()">Desencriptar</button>

@@ -4,11 +4,12 @@ const imagen= document.querySelector(".imagen")
 const mensajeEncriptado= document.querySelector(".mensaje-encriptado")
 
 
+
 function btnEncriptar(){
    
      imagen.style.backgroundImage= "none" 
      const textoEncriptado = encriptar(texto.value); 
-     mensajeEncriptado.innerHTML= textoEncriptado;
+     mensajeEncriptado.innerHTML= `<p id="txtEncriptado">${textoEncriptado}</p>`;
      mensajeEncriptado.style.marginTop= "-300px";
      mensajeEncriptado.style.color= "red";
      mensajeEncriptado.style.fontSize="50px"
@@ -66,9 +67,10 @@ function desencriptar(stringDesencriptar){
    return stringDesencriptar
 }
 
-/* function copiar(){
-   copiaTexto= textoEncriptado.value
-   navigator.clipboard.writeText(copiaTexto)
+ function copiar(){
+   parrafo= document.querySelector('#txtEncriptado').innerText
    
-} */
+   navigator.clipboard.writeText(parrafo)
+   
+} 
 
