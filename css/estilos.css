@@ -37,12 +37,12 @@ body {
 
 .text textarea{
     outline: 0;
-    height:600px;
+    height:400px;
     width: 100%;
     margin: 0 7%;
     border: none;
     font-size: 32px;
-    background-color: #fff;
+    color: #0A3871;
 }
 
 .text textarea::placeholder{
@@ -65,7 +65,7 @@ body {
     height: 67px;
     
     /* Dark blue/dark-blue-300 */
-    
+    border: none;
     background: #0A3871;
     border-radius: 24px;
     
@@ -77,12 +77,17 @@ body {
     flex-grow: 0;
 }
 
+.btn1:hover{
+  background: #021732;
+}
+
 .btn2{
     margin-top: 10px;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
-    gap: 8px;
+     gap: 8px;
+     border: solid 1px #021732;
     
     width: 343px;
     height: 67px;
@@ -100,9 +105,35 @@ body {
     flex-grow: 0;
 }
 
-.imagen{
-    display: none;
+.btn2:hover{
+  background-color: #495057;
+  color: beige;
 }
+
+.btn3{
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+ color: #fff;
+  width: 343px;
+  height: 67px;
+  
+  /* Dark blue/dark-blue-300 */
+  border: none;
+  background: #0A3871;
+  border-radius: 24px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+
 
 .mensaje-encriptado h3 {
   font-family: "Inter";
@@ -111,6 +142,11 @@ body {
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+
+}
+
+.mensaje-encriptado{
+  margin-top: 0px;
 }
 
 .mensaje-encriptado p {
@@ -122,6 +158,7 @@ body {
   /* or 24px */
   text-align: center;
   color: #495057;
+ 
 }
 
 
@@ -140,15 +177,19 @@ body {
 
  .btn2  {
     margin:0px 5px
+
+
  }
+
+
 }
 
 
 @media screen and (min-width: 800px) {
   .principal {
     display: grid;
-    grid-template-columns: 60% 40%;
-    width: 80%;
+    grid-template-columns: 70% 30%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -167,16 +208,28 @@ body {
   }
   
   .imagen{
-    display: block;
-}
-
-
-
+    background-image: url('../img/Muñeco.svg');
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+   
+ 
  .text textarea{
     outline: 0;
-    height:400px;
+    height:300px;
  
 }
+
+.acciones-btn-3{
+
+}
+
+.btn3{
+  width: 50%;
+  margin: 0 20%;
+}
+
 
   
 }

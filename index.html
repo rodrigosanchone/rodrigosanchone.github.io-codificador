@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DocumentChallenger-Oracle-One-codificador3</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/Logo1x.png">
 </head>
 <body>
     <div class="logo">
@@ -17,22 +18,27 @@
     <div class="principal">
         <div class="text">
            
-            <textarea name="" id="" placeholder="Ingrese su texto aquí"></textarea>
+            <textarea name="" id="texto" placeholder="Ingrese su texto aquí"></textarea>
             <div class="acciones">
-                <button class="btn1">Encriptar</button>
-                <button class="btn2">Desencriptar</button>
+                <button class="btn1" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn2" onclick="btnDesencriptar()">Desencriptar</button>
               </div>
         </div>
        
       
         <div class="encriptador">
            <div class="imagen">
-            <img src="img/Muñeco.svg" alt="">
+                
            </div>
            <div class="mensaje-encriptado">
+                    
             <h3> Ningún mensaje fue encontrado</h3>
             <p>Ingrese el texto que desea encriptar o desencritar</p>
+            <p id="parrafo-mensaje"></p>
            </div>
+        <div class="acciones-btn-3">
+            <button class="btn3" onclick="copiar()">Copiar</button>
+        </div>
         </div>
     
      
@@ -40,6 +46,6 @@
      
     </div>
     
-    
+ <script src="script/code.js"></script>
 </body>
 </html>
